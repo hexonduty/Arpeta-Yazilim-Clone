@@ -1,0 +1,644 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif !important;
+    background-image: url(background/slide1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+.menuside{
+    width: 100%;
+    height: 820px;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: none !important;
+}
+
+.navbar .navbarimg{
+    margin-left: 100px;
+    margin-top: 0px;
+}
+
+.navbar .navbarimg img{
+    width: 90px;
+}
+
+
+.navbar ul{
+    display: flex;
+    padding: 50px;
+}
+
+.navbar ul li{
+    padding: 10px;
+}
+
+
+.navbar ul li a{
+    display: flex;
+    position: relative;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover{
+    color: red;
+    transition: 0.2s;
+}
+
+.navbar ul li .firstlink{
+    color: #f18989 !important;
+}
+
+.navbar ul li .firstlink::after{
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 17px;
+    right: 21px;
+    height: 3px;
+    width: 50%;
+    transition: all 0.3s;
+    background-color: #f18989;
+}
+
+.navbar ul li .link::before{
+    content: '';
+    position: absolute;
+    bottom: -17px;
+    left: 21px;
+    right: 21px;
+    height: 3px;
+    transition: all 0.3s;
+    background-color: #f18989;
+    opacity: 0;
+}
+
+.navbar ul li .link:hover::before{
+    opacity: 1;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.menu{
+    margin-top: 140px;
+    padding: 50px;
+    margin-left: 0px;
+}
+
+.menu .menutext h1{
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 50px;
+}
+
+.menu .menubtn{
+    margin-top: 100px;
+}
+
+.menu .menubtn button{
+    width: 130px;
+    height: 40px;
+    border-radius: 50px;
+    color: white;
+    width: 180px;
+    height: 50px;
+    background-color: rgba(38,103,255,0.8) !important;
+}
+
+.menu .menubtn p{
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+    line-height: 30px;
+}
+
+.menu .menubtn button:hover{
+    background-color: aliceblue;
+    color: black;
+    border: 1px solid black;
+    background-color: #fff !important;
+    
+}
+
+
+/* Neler Yapıyoruz Kısmı */
+
+.aboutside{
+    width: 100%;
+    height: 500px;
+    margin-top:100px;
+}
+
+.container .row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+
+.container .row .ny{
+    padding-right: 15px;
+    font-family: 'Roboto';
+    color: #808080;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24px;
+    line-height: 1.6em;
+}
+
+
+.container .row .ny h1{
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: #0a1a40;
+}
+
+.container .cardsides{
+    margin-top: 50px;
+}
+
+
+.container .cardsides .howcardhead h2{
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: -0.7px;
+    margin-bottom: 17px;
+}
+
+.container .cardsides .cardtext p{
+    color: #bababa;
+}
+
+.container .cardsides .cardlink a{
+    color: #f4a4a4;
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    font-size: 13px;
+}
+
+.container .cardsides .cardlink a::before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 30%;
+    height: 1px;
+    transition: all 0.3s;
+    background-color: #f4a4a4;
+}
+
+.container .cardsides .cardlink a:hover::before{
+    opacity: 1;
+    width: 0%;
+    transition: 0.5s;
+}
+
+/* Rakamlarda Biz Kısmı */
+
+.numb{
+    background:linear-gradient(100deg, #6e7bff, #27beff);
+    border-start-end-radius: 50px ;
+    border-bottom-left-radius: 50px ;
+    border: 1px solid #fff
+}
+
+.numb .about{
+    width: 80%;
+    height: 400px;
+}
+
+.numb .about .abouttext{
+    padding: 70px;
+    margin-top: 10px;
+}
+
+.numb .about .row h1{
+    color: #fff;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+
+}
+
+.numb .about .row2{
+    margin-top: 80px;
+    color: #fff;
+}
+
+.numb .about .row2 .plus::after{
+    content: '+';
+}
+
+.numb .about .row2 .bolme::after{
+    content: '%';
+}
+
+.numb .about .row2 h2{
+    font-size: 44px;
+    font-weight: 500;
+}
+
+/* Nasıl Yapıyoruz Kısmı */
+
+.howwedo{
+    margin-top: 100px;
+}
+
+.howwedo .howwedoheader{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.howwedo .howwedoheader h2{
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 300;
+}
+
+.howwedo .howwedoheader p{
+    color: #808080;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.howwedo .howwedo_page{
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.howwedo .howwedo_page .howwedo_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    font-size: 18px;
+    box-sizing: border-box;
+    margin-left: 50px;
+}
+
+.howwedo .howwedo_page .howwedo_left .first .head{
+    display: flex;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.howwedo .howwedo_page .howwedo_left .first .head img{
+    width: 28px;
+    min-width: 40px;
+    margin-top: 2px;
+    margin-right: 26px;
+    margin-bottom: 22px;
+}
+
+.howwedo .howwedo_page .howwedo_left .first .head h1{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 300;
+    letter-spacing: -1.2px;
+    margin-bottom: 19px;
+}
+
+.howwedo .howwedo_page .howwedo_left .first .text{
+    margin-bottom: 17px;
+    line-height: 32px;
+    margin-left: 100px;
+}
+
+
+
+.howwedo .howwedo_page .howwedo_left .second .head{
+    display: flex;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.howwedo .howwedo_page .howwedo_left .second .head img{
+    width: 28px;
+    min-width: 40px;
+    margin-top: 2px;
+    margin-right: 26px;
+    margin-bottom: 22px;
+}
+
+.howwedo .howwedo_page .howwedo_left .second .head h1{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 300;
+    letter-spacing: -1.2px;
+    margin-bottom: 19px;
+    
+}
+
+.howwedo .howwedo_page .howwedo_left .second .text{
+    margin-bottom: 17px;
+    line-height: 32px;
+    margin-left: 100px;
+}
+
+.howwedo .howwedo_page .howwedo_left .theere .head{
+    display: flex;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.howwedo .howwedo_page .howwedo_left .theere .head img{
+    width: 28px;
+    min-width: 40px;
+    margin-top: 2px;
+    margin-right: 26px;
+    margin-bottom: 22px;
+}
+
+.howwedo .howwedo_page .howwedo_left .theere .head h1{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 300;
+    letter-spacing: -1.2px;
+    margin-bottom: 19px;
+}
+
+.howwedo .howwedo_page .howwedo_left .theere .text{
+    margin-bottom: 17px;
+    line-height: 32px;
+    margin-left: 100px;
+}
+
+/* Projeler Kısmı */
+
+.project{
+    margin-top: 150px;
+    width: 100%;
+    position: relative;
+}
+
+.project .projectheader h1{
+    text-align: center;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 300;
+}
+
+.project .projectnav ul{
+    display: flex;
+    padding: 5px;
+}
+
+.project .projectnav ul li{
+    padding: 20px;
+}
+
+.project .projectnav ul li a{
+    display: block;
+    padding-bottom: 12px;
+    position: relative;
+    color: #000 !important;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-decoration: none !important;
+    text-transform: uppercase;
+}
+
+.project .projectnav ul li .active::after{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    transition: all 0.3s;
+    background-color: #000;
+    opacity: 1;
+    width: 100%;
+}
+
+
+.project .projectnav ul li .firstlink::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    transition: all 0.3s;
+    background-color: #000;
+    opacity: 1;
+    width: 0%;
+}
+
+.project .projectnav ul li .firstlink:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+
+.projectcard {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .col-md-6 {
+    position: relative;
+  }
+
+  .col-md-6:hover .cardheader {
+    transform: translateZ(0);
+    opacity: 1;
+    }
+    .col-md-6:hover .cardtitle h3 {
+    transform: translateZ(0);
+    opacity: 1;
+    }
+
+  .imagecard {
+    position: relative;
+    opacity: 1;
+  }
+  .imagecard::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: opacity 0.35s, transform 0.35s, translate3D 0.35s;;
+    opacity: 0.5;
+    z-index: 100;
+  }
+  
+  .col-md-6:hover .imagecard::after {
+    opacity: 0.5; /* Adjust the opacity level as desired */
+    background-color:black ;
+    transition:opacity 0.35s, transform 0.35s, translate3D 0.35s;;
+    width: 100%;
+  }
+  
+
+
+  .imagecard img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+
+  .cardabout{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 5px;
+    right: 5px;
+    color: #fff;
+    z-index: 199;}
+
+
+    .cardheader{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 30px;
+    white-space: nowrap;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0;
+    z-index: 20;
+    transform: translate3D(0, 10px, 0);
+    transition: opacity 0.35s, transform 0.35s, translate3D 0.35s;
+}
+  .cardabout .cardtitle h3 {
+    width: 100%;
+    padding: 0 28px;
+    margin-bottom: 30px;
+    color: #fff !important;
+    line-height: 1.1em;
+    font-weight: 400;
+    z-index: 20;
+    opacity: 0;
+    transition: opacity 0.35s, transform 0.35s, translate3D 0.35s;
+    transform: translate3D(0, 10px, 0);
+    font-size: 36px
+}
+
+/* Card Button Kısmı */
+
+
+.project .aboutbtn .btn{
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px 30px;
+    text-transform: none;
+    font-size: 16px;
+    border-radius: 25px;
+    font-weight: 600;
+    line-height: 16px;
+    border-width: 2px;
+    color: #9c1213 !important;
+    border: 1px solid #9c1213;
+    position: relative;
+    top:0;
+    left: 560px;
+}
+
+.project .aboutbtn .btn:hover {
+    background-color: #9c1213;
+    transition: 0.5s;
+    color: #fff;
+}
+
+/* Text Kısmı */
+
+.textfooter{
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.text .textside{
+    align-items: center;
+    text-align: center;
+}
+
+.textfooter p{
+    text-align: center;
+    line-height: 30px;
+}
+
+.textfooter span{
+    font-weight: 500;
+    font-size: 18px;
+    color: #808080;
+}
+
+
+/* Footer Kısmı */
+
+.footer{
+    background-color: rgb(247, 249, 255);;
+    align-items: center;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.footer .footerpad{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    border-top: 1px solid rgb(10, 26, 64);
+}
+
+.footer .footerpad .footertext{
+    margin-top: 40px;
+    color: #a5a5a5;
+}
+
+.footer .footerpad .footerlink ul{
+    display: flex;
+    justify-content: center;
+}
+
+.footer .footerpad .footerlink ul li{
+    padding: 10px;
+}
+.footer .footerpad .footerlink ul li svg{
+    color: #9C1213;
+}
+
+
+/* Finish */
